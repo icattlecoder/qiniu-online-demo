@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style type="text/css">
+    .ipt {
+        width: 400px;
+    }
+    label {
+        width: 60px;
+        display: block;
+        float: left;
+    }
+    </style>
+</head>
+
+<body>
+    <form method="post" action="http://up.qiniu.com" enctype="multipart/form-data">
+        <dd>
+            <dt>
+                <label for="token">token:</label>
+                <input id="token" name="token" class="ipt" value="">
+            </dt>
+            <dt>
+                <label for="key">key:</label>
+                <input name="key" class="ipt" value="">
+            </dt>
+            <dt>
+                <label for="x:username">姓名(自定义变量):</label>
+                <input name="x:username" class="ipt" value="">
+            </dt>
+            <dt>
+                <label for="bucket">照片:</label>
+                <input name="file" class="ipt" type="file" />
+            </dt>
+            <dt>
+                <input type="submit" value="提交">
+            </dt>
+        </dd>
+    </form>
+</body>
+
+</html>
